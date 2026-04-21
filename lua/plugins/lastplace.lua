@@ -1,5 +1,5 @@
 return {
 	"ethanholz/nvim-lastplace",
+	event = "VeryLazy",
 	opts = {},
-	lazy = false,
 }

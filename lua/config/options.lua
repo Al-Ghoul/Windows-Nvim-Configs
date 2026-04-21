@@ -28,14 +28,14 @@ opt.hidden = true
 opt.errorbells = false
 opt.swapfile = false
 opt.backup = false
-opt.undodir = vim.fn.expand("~/.nvim/undodir")
+-- opt.undodir = vim.fn.expand("~/.nvim/undodir")
 opt.undofile = true
 opt.backspace = "indent,eol,start"
 opt.splitright = true
 opt.splitbelow = true
 opt.autochdir = false
-opt.iskeyword:append("-")
-opt.mouse:append("a")
-opt.clipboard:append("unnamedplus")
+-- opt.iskeyword:append("-")
+-- opt.mouse:append("a")
+-- opt.clipboard:append("unnamedplus")
 opt.modifiable = true
 opt.encoding = "UTF-8"

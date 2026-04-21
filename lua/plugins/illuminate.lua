@@ -1,4 +1,4 @@
 return {
-  "mbbill/undotree",
+  "RRethy/vim-illuminate",
   lazy = false,
 }
