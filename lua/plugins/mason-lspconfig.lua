@@ -6,7 +6,7 @@ return {
     ensure_installed = {
       "lua_ls",
       "clangd",
-      -- "cmake",
+      "neocmake",
     },
   },
   dependencies = {
@@ -18,6 +18,7 @@ return {
     local LSPs = {
       { "lua_ls" },
       { "clangd" },
+      { "neocmake" },
     }
 
     for _, lsp in pairs(LSPs) do
