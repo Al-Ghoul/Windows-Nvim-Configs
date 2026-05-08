@@ -6,7 +6,8 @@ return {
     vim.o.timeoutlen = 300
 
     local wk = require("which-key")
-    local harpoon = require("harpoon")
+    local harpoon_ui = require("harpoon.ui")
+    local harpoon_mark = require("harpoon.mark")
 
     wk.register({
       -- Fzf lua related
@@ -59,10 +60,10 @@ return {
       ["<space>f"] = { function() vim.lsp.buf.format({ async = true }) end, "Format current buffer" },
 
       -- Harpoon related
-      ["<leader>a"] = { function() harpoon:list():add() end, "Add current buffer to harpoon" },
-      ["<C-e>"] = { function() harpoon.ui:toggle_quick_menu(harpoon:list()) end, "Show harpoon's buffer list" },
-      ["<leader>pp"] = { function() harpoon:list():prev() end, "Navigate to next buffer in harpoon" },
-      ["<leader>nn"] = { function() harpoon:list():next() end, "Navigate to prev buffer in harpoon" },
+      ["<leader>a"] = { function() harpoon_mark.add_file() end, "Add current buffer to harpoon" },
+      ["<C-e>"] = { function() harpoon_ui.toggle_quick_menu() end, "Show harpoon's buffer list" },
+      ["<leader>pp"] = { function() harpoon_ui.nav_next() end, "Navigate to next buffer in harpoon" },
+      ["<leader>nn"] = { function() harpoon_ui.nav_prev() end, "Navigate to prev buffer in harpoon" },
     })
   end,
 }
