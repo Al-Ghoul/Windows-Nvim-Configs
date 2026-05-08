@@ -11,7 +11,7 @@ return {
     }
   },
   config = function()
-    require("luasnip.loaders.from_vscode").lazy_load() -- luasnip/friendly-snippets related
+    require("luasnip.loaders.from_vscode").lazy_load()
 
     local cmp = require("cmp")
     cmp.setup({
@@ -23,7 +23,7 @@ return {
       mapping = cmp.mapping.preset.insert({
         ["<C-Space>"] = cmp.mapping.complete(),
         ["<C-e>"] = cmp.mapping.close(),
-        ["<CR>"] = cmp.mapping.confirm({ select = false }),
+        ["<CR>"] = cmp.mapping.confirm({ select = true }),
         ["<S-Tab>"] = cmp.mapping(cmp.mapping.select_prev_item(), { 'i', 's' }),
         ["<Tab>"] = cmp.mapping(cmp.mapping.select_next_item(), { 'i', 's' }),
       }),
