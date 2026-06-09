@@ -7,6 +7,8 @@ return {
       "lua_ls",
       "clangd",
       "neocmake",
+      "yaml-language-server",
+      "zls",
     },
   },
   dependencies = {
@@ -19,6 +21,8 @@ return {
       { "lua_ls" },
       { "clangd" },
       { "neocmake" },
+      { "yamlls" },
+      { "zls" },
     }
 
     for _, lsp in pairs(LSPs) do
