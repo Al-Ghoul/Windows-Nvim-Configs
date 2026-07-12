@@ -9,6 +9,7 @@ return {
       "neocmake",
       "yaml-language-server",
       "zls",
+      "glsl_analyzer",
     },
   },
   dependencies = {
@@ -23,6 +24,7 @@ return {
       { "neocmake" },
       { "yamlls" },
       { "zls" },
+      { "glsl_analyzer" },
     }
 
     for _, lsp in pairs(LSPs) do
