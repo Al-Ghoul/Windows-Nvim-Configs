@@ -25,6 +25,11 @@ return {
       { "yamlls" },
       { "zls" },
       { "glsl_analyzer" },
+      { "bgfx_shader_analyzer", {
+        cmd = { 'bgfx_shader_analyzer' },
+        filetypes = { 'glsl', 'sc' },
+        root_markers = { '.git' },
+      } },
     }
 
     for _, lsp in pairs(LSPs) do

@@ -45,3 +45,10 @@ vim.diagnostic.config({
     prefix = "●",
   },
 })
+
+-- for bgfx_shader_analyzer
+vim.filetype.add({
+  extension = {
+    sc = "glsl",
+  },
+})
