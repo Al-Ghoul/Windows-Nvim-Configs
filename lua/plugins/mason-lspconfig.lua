@@ -10,6 +10,7 @@ return {
       "yaml-language-server",
       "zls",
       "glsl_analyzer",
+      "expert",
     },
   },
   dependencies = {
@@ -30,6 +31,7 @@ return {
         filetypes = { 'glsl', 'sc' },
         root_markers = { '.git' },
       } },
+      { "expert" },
     }
 
     for _, lsp in pairs(LSPs) do
